@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Hosmed - Drug Info</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="js/ajax.js"></script>
+    <script src="js/druginfo.js"></script>
+</head>
+<body>
+<h1 class="text-align-center">Drug Info</h1>
+<h2 class="text-align-center"><a href="home.html">Go home</a></h2>
+
+<input type="checkbox" name="drug_info_type" value="basic" checked><span>기본정보(생김새 등)</span>
+<input type="checkbox" name="drug_info_type" value="toxic"><span>독성정보</span>
+<input type="checkbox" name="drug_info_type" value="side_effect"><span>부작용</span>
+<input type="checkbox" name="drug_info_type" value="usage"><span>효과기대 증상</span><br>
+
+<input id="input_drug_name" type="text" name="" value="타이레놀">
+
+<button id="test" type="button" name="" onclick='serch_info_click()'>검색</button><br>
+
+<div id="tables"></div>
+
+</body>
+
+</html>
